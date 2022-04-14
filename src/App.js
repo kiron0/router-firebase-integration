@@ -8,6 +8,8 @@ import NotFound from "./components/NotFound/NotFound";
 import Orders from "./components/Orders/Orders";
 import Products from "./components/Products/Products";
 import Register from "./components/Register/Register";
+import RequireAuth from "./components/RequireAuth/RequireAuth";
+import VIP from "./components/VIP/VIP";
 
 function App() {
   return (
@@ -17,9 +19,17 @@ function App() {
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/home" element={<Home></Home>}></Route>
         <Route path="/products" element={<Products></Products>}></Route>
-        <Route path="/orders" element={<Orders></Orders>}></Route>
+        <Route
+          path="/orders"
+          element={
+            <RequireAuth>
+              <Orders></Orders>
+            </RequireAuth>
+          }
+        ></Route>
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/register" element={<Register></Register>}></Route>
+        <Route path="/vip" element={<VIP></VIP>}></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
     </div>
