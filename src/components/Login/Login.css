@@ -1,0 +1,36 @@
+button{
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px 20px;
+    border-radius: .5rem;
+    margin: 8px 0;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+.btn{
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px 50px;
+    border-radius: .5rem;
+    margin: 8px 0;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.input{
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 50%;
+    padding: 25px 20px;
+    border: none;
+    border-radius: .5rem;
+    box-sizing: border-box;
+    margin: 8px 0;
+    font-size: 1rem;
+    font-weight: 600;
+    outline: none;
+}
