@@ -1,21 +1,63 @@
-.header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-    height: 80px;
-    background: #fff;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 80px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.header nav{
-    display: flex;
-    align-items: center;
-    margin: 0 auto;
-    font-size: 1.5rem;
-    font-weight: 500;
+.header nav {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
-.link{
-    margin-left: 20px;
+.link {
+  margin-left: 20px;
+}
+
+.logout-button {
+  border: none;
+  margin-left: 15px;
+  font-size: 1.5rem;
+  background-color: transparent;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 15px 20px;
+  border-radius: 0.5rem;
+  color: rgb(0, 170, 255);
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.profile-pic {
+  border: 2px solid rgb(0, 170, 255);
+  margin: -0.5rem 1rem;
+  width: 50px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 490px) {
+  .header nav {
+    display: block;
+    align-items: center;
+  }
+  .profile-pic {
+    margin: 0.5rem auto;
+  }
+}
+
+@media screen and (min-width: 776px) {
+  .profile-pic {
+    margin: -1rem 1rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .profile-pic {
+    margin: -1rem 1rem;
+  }
 }
