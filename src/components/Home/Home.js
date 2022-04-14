@@ -1,12 +1,15 @@
-import React from 'react';
-import './Home.css'
+import React from "react";
+import useFirebase from "../../hooks/useFirebase";
+import "./Home.css";
 
 const Home = () => {
-    return (
-        <div>
-            <h2>This is home</h2>
-        </div>
-    );
+  const { user } = useFirebase();
+  return (
+    <div>
+      <h2>This is home</h2>
+      <h3>Current User: {user ? user.displayName : "Nobody"}</h3>
+    </div>
+  );
 };
 
 export default Home;

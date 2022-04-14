@@ -12,7 +12,7 @@
   display: flex;
   align-items: center;
   margin: 0 auto;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 500;
 }
 
@@ -23,7 +23,7 @@
 .logout-button {
   border: none;
   margin-left: 15px;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   background-color: transparent;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 15px 20px;
